@@ -1,0 +1,11 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header"></head>
+<body ng-app="weatherApp" >
+<div ng-controller="BoardController" class="wb-page">
+    <input class="wb-login" type="text" placeholder="ej. Buenos Aires" />
+    <button class="login" type="button">Login</button>
+    <button class="signup" type="button">Registrarse</button>
+</div>
+</body>
+</html>
