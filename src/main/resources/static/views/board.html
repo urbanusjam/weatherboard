@@ -1,0 +1,29 @@
+</hr>
+<div class="wb-page">
+    <h1>Hola, {{currentUser}} </h1>
+    <md-autocomplete
+            class="wb-search"
+            md-search-text="searchText"
+            md-items="item in querySearch(searchText)"
+            md-selected-item="selectedItem"
+            md-selected-item-change="searchItemChange(item)"
+            md-item-text="searchItemLabel(item)"
+            md-min-length="3"
+            md-no-cache="true"
+            placeholder="Buscar locaciones...">
+        <md-item-template>
+            <span>{{item.name}}, {{item.admin1}}, {{item.country}}</span>
+        </md-item-template>
+        <md-not-found>
+            No hay locaciones que coincidan con la búsqueda.
+        </md-not-found>
+    </md-autocomplete>
+    <button type="button" class="btn btn-primary" ng-disabled="!searchText.length" ng-click="addLocation()" ng>Agregar locación</button>
+    <h3>Mis locaciones</h3>
+    <div ng-repeat="location in locations">
+        <wb-location class="wb-location-wrapper"></wb-location>
+    </div>
+    <div ng-hide="locations.length">No hay locaciones guardadas.</div>
+</div>
+
+<div wb-footer class="wb-footer"></div>

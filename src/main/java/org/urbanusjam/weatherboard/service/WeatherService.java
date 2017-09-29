@@ -4,26 +4,22 @@ import org.urbanusjam.weatherboard.model.Board;
 import org.urbanusjam.weatherboard.model.Location;
 import org.urbanusjam.weatherboard.model.User;
 
-import java.util.List;
-
 public interface WeatherService {
+
+    void addUser(User user);
+
+    User getUser(String username);
 
     Board getBoard(String username);
 
-    Location getLocation(String user, String locationId);
+    Location getLocation(String locationId);
 
-    String addLocationToBoard(String username, Location location);
+    Location addLocation(String username, Location location);
 
-    void deleteLocation(String user, String locationId);
+    void deleteLocation(String username, String woeid);
 
     void updateLocations();
 
     String executeQuery(String query);
-
-    List<User> getUsers();
-
-    User addUser(User user);
-
-    void deleteUser(String userId);
 
 }

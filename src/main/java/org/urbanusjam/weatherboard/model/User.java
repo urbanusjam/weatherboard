@@ -12,6 +12,7 @@ public class User {
     @Indexed(unique = true)
     private String username;
     private String password;
+    private String email;
 
     private User() {}
 
@@ -43,8 +44,16 @@ public class User {
         this.password = password;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     @Override
     public String toString() {
-        return String.format("User[id=%s, username='%s']", id, username);
+        return String.format("User[id=%s, username='%s', email=%s]", id, username, email);
     }
 }

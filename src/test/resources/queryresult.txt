@@ -1,0 +1,272 @@
+{
+	"query": {
+		"count": 10,
+		"created": "2017-09-29T01:43:42Z",
+		"lang": "en-US",
+		"diagnostics": {
+			"publiclyCallable": "true",
+			"url": {
+				"execution-start-time": "0",
+				"execution-stop-time": "5",
+				"execution-time": "5",
+				"content": "http://weather-ydn-yql.media.yahoo.com:4080/v3/public/weather/rss?u=c&w=466887"
+			},
+			"user-time": "7",
+			"service-time": "5",
+			"build-version": "2.0.187"
+		},
+		"results": {
+			"channel": [{
+					"lastBuildDate": "Thu, 28 Sep 2017 10:43 PM ART",
+					"atmosphere": {
+						"humidity": "85",
+						"pressure": "33830.04",
+						"rising": "0",
+						"visibility": "25.91"
+					},
+					"item": {
+						"condition": {
+							"code": "26",
+							"date": "Thu, 28 Sep 2017 10:00 PM ART",
+							"temp": "9",
+							"text": "Cloudy"
+						},
+						"forecast": {
+							"code": "28",
+							"date": "28 Sep 2017",
+							"day": "Thu",
+							"high": "13",
+							"low": "0",
+							"text": "Mostly Cloudy"
+						}
+					}
+				},
+				{
+					"lastBuildDate": "Thu, 28 Sep 2017 10:43 PM ART",
+					"atmosphere": {
+						"humidity": "85",
+						"pressure": "33830.04",
+						"rising": "0",
+						"visibility": "25.91"
+					},
+					"item": {
+						"condition": {
+							"code": "26",
+							"date": "Thu, 28 Sep 2017 10:00 PM ART",
+							"temp": "9",
+							"text": "Cloudy"
+						},
+						"forecast": {
+							"code": "28",
+							"date": "29 Sep 2017",
+							"day": "Fri",
+							"high": "16",
+							"low": "8",
+							"text": "Mostly Cloudy"
+						}
+					}
+				},
+				{
+					"lastBuildDate": "Thu, 28 Sep 2017 10:43 PM ART",
+					"atmosphere": {
+						"humidity": "85",
+						"pressure": "33830.04",
+						"rising": "0",
+						"visibility": "25.91"
+					},
+					"item": {
+						"condition": {
+							"code": "26",
+							"date": "Thu, 28 Sep 2017 10:00 PM ART",
+							"temp": "9",
+							"text": "Cloudy"
+						},
+						"forecast": {
+							"code": "12",
+							"date": "30 Sep 2017",
+							"day": "Sat",
+							"high": "17",
+							"low": "9",
+							"text": "Rain"
+						}
+					}
+				},
+				{
+					"lastBuildDate": "Thu, 28 Sep 2017 10:43 PM ART",
+					"atmosphere": {
+						"humidity": "85",
+						"pressure": "33830.04",
+						"rising": "0",
+						"visibility": "25.91"
+					},
+					"item": {
+						"condition": {
+							"code": "26",
+							"date": "Thu, 28 Sep 2017 10:00 PM ART",
+							"temp": "9",
+							"text": "Cloudy"
+						},
+						"forecast": {
+							"code": "11",
+							"date": "01 Oct 2017",
+							"day": "Sun",
+							"high": "14",
+							"low": "10",
+							"text": "Showers"
+						}
+					}
+				},
+				{
+					"lastBuildDate": "Thu, 28 Sep 2017 10:43 PM ART",
+					"atmosphere": {
+						"humidity": "85",
+						"pressure": "33830.04",
+						"rising": "0",
+						"visibility": "25.91"
+					},
+					"item": {
+						"condition": {
+							"code": "26",
+							"date": "Thu, 28 Sep 2017 10:00 PM ART",
+							"temp": "9",
+							"text": "Cloudy"
+						},
+						"forecast": {
+							"code": "28",
+							"date": "02 Oct 2017",
+							"day": "Mon",
+							"high": "16",
+							"low": "9",
+							"text": "Mostly Cloudy"
+						}
+					}
+				},
+				{
+					"lastBuildDate": "Thu, 28 Sep 2017 10:43 PM ART",
+					"atmosphere": {
+						"humidity": "85",
+						"pressure": "33830.04",
+						"rising": "0",
+						"visibility": "25.91"
+					},
+					"item": {
+						"condition": {
+							"code": "26",
+							"date": "Thu, 28 Sep 2017 10:00 PM ART",
+							"temp": "9",
+							"text": "Cloudy"
+						},
+						"forecast": {
+							"code": "23",
+							"date": "03 Oct 2017",
+							"day": "Tue",
+							"high": "16",
+							"low": "10",
+							"text": "Breezy"
+						}
+					}
+				},
+				{
+					"lastBuildDate": "Thu, 28 Sep 2017 10:43 PM ART",
+					"atmosphere": {
+						"humidity": "85",
+						"pressure": "33830.04",
+						"rising": "0",
+						"visibility": "25.91"
+					},
+					"item": {
+						"condition": {
+							"code": "26",
+							"date": "Thu, 28 Sep 2017 10:00 PM ART",
+							"temp": "9",
+							"text": "Cloudy"
+						},
+						"forecast": {
+							"code": "4",
+							"date": "04 Oct 2017",
+							"day": "Wed",
+							"high": "22",
+							"low": "13",
+							"text": "Thunderstorms"
+						}
+					}
+				},
+				{
+					"lastBuildDate": "Thu, 28 Sep 2017 10:43 PM ART",
+					"atmosphere": {
+						"humidity": "85",
+						"pressure": "33830.04",
+						"rising": "0",
+						"visibility": "25.91"
+					},
+					"item": {
+						"condition": {
+							"code": "26",
+							"date": "Thu, 28 Sep 2017 10:00 PM ART",
+							"temp": "9",
+							"text": "Cloudy"
+						},
+						"forecast": {
+							"code": "47",
+							"date": "05 Oct 2017",
+							"day": "Thu",
+							"high": "16",
+							"low": "10",
+							"text": "Scattered Thunderstorms"
+						}
+					}
+				},
+				{
+					"lastBuildDate": "Thu, 28 Sep 2017 10:43 PM ART",
+					"atmosphere": {
+						"humidity": "85",
+						"pressure": "33830.04",
+						"rising": "0",
+						"visibility": "25.91"
+					},
+					"item": {
+						"condition": {
+							"code": "26",
+							"date": "Thu, 28 Sep 2017 10:00 PM ART",
+							"temp": "9",
+							"text": "Cloudy"
+						},
+						"forecast": {
+							"code": "32",
+							"date": "06 Oct 2017",
+							"day": "Fri",
+							"high": "20",
+							"low": "9",
+							"text": "Sunny"
+						}
+					}
+				},
+				{
+					"lastBuildDate": "Thu, 28 Sep 2017 10:43 PM ART",
+					"atmosphere": {
+						"humidity": "85",
+						"pressure": "33830.04",
+						"rising": "0",
+						"visibility": "25.91"
+					},
+					"item": {
+						"condition": {
+							"code": "26",
+							"date": "Thu, 28 Sep 2017 10:00 PM ART",
+							"temp": "9",
+							"text": "Cloudy"
+						},
+						"forecast": {
+							"code": "28",
+							"date": "07 Oct 2017",
+							"day": "Sat",
+							"high": "21",
+							"low": "12",
+							"text": "Mostly Cloudy"
+						}
+					}
+				}
+			]
+		}
+	}
+}

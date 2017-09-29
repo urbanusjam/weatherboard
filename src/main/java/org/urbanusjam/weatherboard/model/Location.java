@@ -1,48 +1,31 @@
 package org.urbanusjam.weatherboard.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.index.Indexed;
-import org.springframework.data.mongodb.core.mapping.Document;
+
+import static java.lang.String.format;
 
 /**
  * Represents a geographic place.
  */
-@Document(collection = "locations")
 public class Location {
 
     @Id
-    private String id;
-    @Indexed(unique = true)
+    @JsonProperty("woeid")
     private String woeid;
+    @JsonProperty("name")
     private String city;
+    @JsonProperty("locality1")
     private String locality;
+    @JsonProperty("admin1")
+    private String region;
+    @JsonProperty("country")
     private String country;
-    private Condition status;
+    @JsonIgnoreProperties("status")
+    private Status status;
 
     public Location() {}
-
-    public Location(String woeid, String city, String locality, String country) {
-        this.woeid = woeid;
-        this.city = city;
-        this.locality = locality;
-        this.country = country;
-    }
-
-    public Location(String woeid, String city, String locality, String country, Condition currentStatus) {
-        this.woeid = woeid;
-        this.city = city;
-        this.locality = locality;
-        this.country = country;
-        this.status = currentStatus;
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
 
     public String getWoeid() {
         return woeid;
@@ -68,6 +51,14 @@ public class Location {
         this.locality = locality;
     }
 
+    public String getRegion() {
+        return region;
+    }
+
+    public void setRegion(String region) {
+        this.region = region;
+    }
+
     public String getCountry() {
         return country;
     }
@@ -76,12 +67,17 @@ public class Location {
         this.country = country;
     }
 
-    public Condition getStatus() {
+    public Status getStatus() {
         return status;
     }
 
-    public void setStatus(Condition status) {
+    public void setStatus(Status status) {
         this.status = status;
+    }
+
+    @Override
+    public String toString() {
+        return format("Location [woeid=%s, city=%s, locality=%s, region=%s, country=%s]", woeid, city, locality, region, country);
     }
 
 }

@@ -1,23 +1,22 @@
+
 package org.urbanusjam.weatherboard.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.time.LocalDateTime;
-import java.util.List;
 
-/**
- * Current weather condition. Part of {@link Location}.
- */
-public class Condition {
+import static java.lang.String.format;
 
+public class Status {
+
+    @JsonFormat(pattern = "EEEE dd", locale = "es")
     private LocalDateTime date;
-    private LocalDateTime lastUpdated;
-    private String temp;
+    private String temperature;
     private String description;
     private String humidity;
     private String pressure;
-    private char unit;
-    private List<Forecast> forecast;
-
-    public Condition() {}
+    @JsonFormat(pattern = "dd MMM yyyy HH:mm")
+    private LocalDateTime lastUpdated;
 
     public LocalDateTime getDate() {
         return date;
@@ -27,20 +26,12 @@ public class Condition {
         this.date = date;
     }
 
-    public LocalDateTime getLastUpdated() {
-        return lastUpdated;
+    public String getTemperature() {
+        return temperature;
     }
 
-    public void setLastUpdated(LocalDateTime lastUpdated) {
-        this.lastUpdated = lastUpdated;
-    }
-
-    public String getTemp() {
-        return temp;
-    }
-
-    public void setTemp(String temp) {
-        this.temp = temp;
+    public void setTemperature(String temperature) {
+        this.temperature = temperature;
     }
 
     public String getDescription() {
@@ -67,19 +58,16 @@ public class Condition {
         this.pressure = pressure;
     }
 
-    public char getUnit() {
-        return unit;
+    public LocalDateTime getLastUpdated() {
+        return lastUpdated;
     }
 
-    public void setUnit(char unit) {
-        this.unit = unit;
+    public void setLastUpdated(LocalDateTime lastUpdated) {
+        this.lastUpdated = lastUpdated;
     }
 
-    public List<Forecast> getForecast() {
-        return forecast;
-    }
-
-    public void setForecast(List<Forecast> forecast) {
-        this.forecast = forecast;
+    @Override
+    public String toString() {
+        return format("Status [date=%s, temperature=%s, description=%s, lastUpdates=%s]", date, temperature, description, lastUpdated);
     }
 }

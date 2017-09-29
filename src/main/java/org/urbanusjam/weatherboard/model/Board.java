@@ -12,10 +12,14 @@ public class Board {
     @Id
     private String id;
     private User user;
-    private List<Location> locations = Lists.newArrayList();
+    private List<Location> locations;
+
+    public Board() {
+    }
 
     public Board(User user) {
         this.user = user;
+        this.locations = Lists.newArrayList();
     }
 
     public String getId() {
@@ -41,4 +45,5 @@ public class Board {
     public void setLocations(List<Location> locations) {
         this.locations = locations;
     }
+
 }
